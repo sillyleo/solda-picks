@@ -1,0 +1,43 @@
+body {
+	background: #fafafa;
+}
+
+// 導覽列
+
+.logo {
+	padding: 60px 0 40px 0;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	img {
+		margin: 30px 0 40px 0;
+	}
+	.slogan {
+		color: #f75e50;
+		font-size: 13px;
+		font-weight: bold;
+		.small {
+			font-weight: bold;
+			font-size: 12px;
+		}
+	}
+}
+
+
+
+// 標題
+
+// 側邊欄
+
+// 內容
+
+.main-content {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+ .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('http://lorempixel.com/400/400') center / cover;
+  }
