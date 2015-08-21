@@ -1,0 +1,26 @@
+
+$height: 200px;
+
+div {
+	height: $height;
+	display: block;
+}
+.one {
+	height: $height + 210;
+	background: yellow;
+}
+
+.two {
+	height: $height + 140;
+	background: green;
+}
+
+.three {
+	height: $height + 70;
+	background: #ffc0cb;
+}
+
+.four {
+	height: $height;
+	background: #4b0f82;
+}

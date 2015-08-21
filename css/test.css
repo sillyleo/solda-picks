@@ -1,0 +1,19 @@
+div {
+  height: 200px;
+  display: block; }
+
+.one {
+  height: 410px;
+  background: yellow; }
+
+.two {
+  height: 340px;
+  background: green; }
+
+.three {
+  height: 270px;
+  background: #ffc0cb; }
+
+.four {
+  height: 200px;
+  background: #4b0f82; }

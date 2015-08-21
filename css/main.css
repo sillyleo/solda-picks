@@ -1,6 +1,26 @@
 body {
   background: #fafafa; }
 
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row; }
+
+.flex-grow {
+  flex-grow: 1; }
+
+.flex-drop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
 .logo {
   padding: 60px 0 40px 0;
   margin: 0 auto;
@@ -20,7 +40,13 @@ body {
   max-width: 900px;
   margin: 0 auto; }
 
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url("http://lorempixel.com/400/400") center/cover; }
+.picks-intro > .mdl-card__title {
+  background: url("../img/drop.png") center center no-repeat;
+  background-size: cover; }
+
+.product-image > a {
+  min-height: 150px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px;
+  cursor: pointer; }
