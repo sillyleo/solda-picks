@@ -1,26 +1,32 @@
 
-$height: 200px;
-
 div {
-	height: $height;
-	display: block;
-}
-.one {
-	height: $height + 210;
-	background: yellow;
+
 }
 
-.two {
-	height: $height + 140;
+// Leo's 內容置底系統 Leo's Align Bottom System L.A.B.S
+// - 使用方式：外部 div 加上 .labs-outter
+// - 在裡面其中一個加上伸縮的 .labs-grow，如果沒有加，那麼全部 div 只會置底而已
+
+.labs-outter {
+	display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  & > div.labs-grow {
+		flex-grow: 1;
+  }
+}
+
+.inner-1 {
 	background: green;
+	height: 150px;
 }
 
-.three {
-	height: $height + 70;
+.inner-2 {
 	background: #ffc0cb;
+	height: 150px;
 }
 
-.four {
-	height: $height;
+.inner-3 {
 	background: #4b0f82;
+	height: 50px;
 }

@@ -1,19 +1,18 @@
-div {
-  height: 200px;
-  display: block; }
+.labs-outter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .labs-outter > div.labs-grow {
+    flex-grow: 1; }
 
-.one {
-  height: 410px;
-  background: yellow; }
+.inner-1 {
+  background: green;
+  height: 150px; }
 
-.two {
-  height: 340px;
-  background: green; }
+.inner-2 {
+  background: #ffc0cb;
+  height: 150px; }
 
-.three {
-  height: 270px;
-  background: #ffc0cb; }
-
-.four {
-  height: 200px;
-  background: #4b0f82; }
+.inner-3 {
+  background: #4b0f82;
+  height: 50px; }

@@ -1,34 +1,37 @@
+// 一般
+
 body {
 	background: #fafafa;
 }
 
-.flex {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
+
+// Leo's 內容置底系統 Leo's Align Bottom System L.A.B.S
+// - 使用方式：外部 div 加上 .labs-outter
+// - 在裡面其中一個加上伸縮的 .labs-grow，如果沒有加，那麼全部 div 只會置底而已
+
+.labs-outter {
 	display: flex;
-	flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-end;
+  & > div.labs-grow {
+		flex-grow: 1;
+  }
 }
 
-.flex-grow {
+.mdl-card {
+	@extend .labs-outter;
+	// 把 mdl-card 自動加上置底
+}
+
+.mdl-card__media {
 	flex-grow: 1;
-}
-
-.flex-drop {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: end;
-	-webkit-align-items: flex-end;
-	-ms-flex-align: end;
-	align-items: flex-end;
+	// media 區塊自動會伸縮
 }
 
 // 導覽列
 
 .logo {
-	padding: 60px 0 40px 0;
+	padding: 40px 0 20px 0;
 	margin: 0 auto;
 	text-align: center;
 	font-weight: bold;
@@ -54,22 +57,52 @@ body {
 
 // 內容
 
+.mdl-card__media {
+  background-color: white;
+}
+
+.mdl-card {
+	min-height: 500px;
+}
+
 .main-content {
 	max-width: 900px;
 	margin: 0 auto;
 }
 
-.picks-intro {
-	& > .mdl-card__title {
-		background: url('../img/drop.png') center center no-repeat;
-		background-size: cover;
+.product-image {
+	@extend .labs-outter;
+	a {
+		@extend .labs-outter;
+		text-decoration: none;
+		box-sizing: border-box;
+		flex-grow: 1;
+		background: green;
+		color: black;
+		vertical-align: bottom;
 	}
 }
 
-.product-image > a {
-	min-height: 150px;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 24px;
-	cursor: pointer;
+.avatar {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	img {
+		width: 42px;
+		height: 42px;
+		display: inline-block;
+		border: 1px solid rgba(0, 0, 0, 0.0980392);
+		border-radius: 2px;
+	}
+	div {
+		padding-left: 16px;
+		text-decoration: none;
+		display: inline-block;
+		strong {
+			color: rgba(0,0,0,0.87);
+		}
+		span {
+			color: rgb(117, 117, 117);
+		}
+	}
 }

@@ -1,28 +1,18 @@
 body {
   background: #fafafa; }
 
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.labs-outter, .mdl-card, .product-image, .product-image a {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  justify-content: flex-end; }
+  .labs-outter > div.labs-grow, .mdl-card > div.labs-grow, .product-image > div.labs-grow, .product-image a > div.labs-grow {
+    flex-grow: 1; }
 
-.flex-grow {
+.mdl-card__media {
   flex-grow: 1; }
 
-.flex-drop {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end; }
-
 .logo {
-  padding: 60px 0 40px 0;
+  padding: 40px 0 20px 0;
   margin: 0 auto;
   text-align: center;
   font-weight: bold; }
@@ -36,17 +26,39 @@ body {
       font-weight: bold;
       font-size: 12px; }
 
+.mdl-card__media {
+  background-color: white; }
+
+.mdl-card {
+  min-height: 500px; }
+
 .main-content {
   max-width: 900px;
   margin: 0 auto; }
 
-.picks-intro > .mdl-card__title {
-  background: url("../img/drop.png") center center no-repeat;
-  background-size: cover; }
-
-.product-image > a {
-  min-height: 150px;
+.product-image a {
+  text-decoration: none;
   box-sizing: border-box;
-  width: 100%;
-  padding: 24px;
-  cursor: pointer; }
+  flex-grow: 1;
+  background: green;
+  color: black;
+  vertical-align: bottom; }
+
+.avatar {
+  display: flex;
+  align-items: center;
+  text-decoration: none; }
+  .avatar img {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.0980392);
+    border-radius: 2px; }
+  .avatar div {
+    padding-left: 16px;
+    text-decoration: none;
+    display: inline-block; }
+    .avatar div strong {
+      color: rgba(0, 0, 0, 0.87); }
+    .avatar div span {
+      color: #757575; }
