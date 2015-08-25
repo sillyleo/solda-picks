@@ -2,6 +2,7 @@
 
 body {
 	background: #fafafa;
+	font-family: "Noto Sans CJK TC";
 }
 
 
@@ -30,39 +31,23 @@ body {
 
 // 導覽列
 
-.logo {
-	padding: 40px 0 20px 0;
-	margin: 0 auto;
-	text-align: center;
-	font-weight: bold;
-	img {
-		margin: 30px 0 40px 0;
-	}
-	.slogan {
-		color: #f75e50;
-		font-size: 13px;
-		font-weight: bold;
-		.small {
-			font-weight: bold;
-			font-size: 12px;
-		}
-	}
+// 內容
+
+.main-content {
+	padding-top: 260px;
+	background: url('../img/logo.svg') 4vw 60px no-repeat;
 }
 
-
-
-// 標題
-
-// 側邊欄
-
-// 內容
+.mdl-card.intro-card {
+	// background: #b0deda;
+}
 
 .mdl-card__media {
   background-color: white;
 }
 
 .mdl-card {
-	min-height: 500px;
+	min-height: 330px;
 }
 
 .main-content {
