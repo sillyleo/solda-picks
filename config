@@ -1,0 +1,20 @@
+{
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 2,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"material_theme_accent_red": true,
+	"material_theme_bold_tab": true,
+	"material_theme_medium_tab": true,
+	"material_theme_small_statusbar": true,
+	"scroll_past_end": true,
+	"tab_size": 2,
+	"theme": "Material-Theme.sublime-theme"
+}
