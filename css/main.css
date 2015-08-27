@@ -12,14 +12,21 @@ body {
 .mdl-card__media {
   flex-grow: 1; }
 
-.main-content {
-  padding-top: 330px;
-  background: url("../img/logo.svg") 4vw 90px no-repeat; }
+a.logo {
+  display: inline-block;
+  margin: 30px 8px; }
+  a.logo img {
+    width: 200px;
+    height: 200px; }
+
+.week-title {
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 .mdl-card__media {
   background-color: white; }
 
 .mdl-card {
+  border-radius: 3px;
   min-height: 330px; }
 
 .main-content {
@@ -52,3 +59,13 @@ body {
       color: rgba(0, 0, 0, 0.87); }
     .avatar div span {
       color: #757575; }
+
+.post section {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 16px 0 0 0;
+  box-sizing: border-box; }
+  .post section p {
+    font-size: 15px; }
+.post .product-image a {
+  height: 300px; }

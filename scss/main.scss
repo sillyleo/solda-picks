@@ -33,9 +33,24 @@ body {
 
 // 內容
 
-.main-content {
-	padding-top: 330px;
-	background: url('../img/logo.svg') 4vw 90px no-repeat;
+a.logo {
+	img {
+		width: 200px;
+		height: 200px;
+	}
+	display: inline-block;
+	margin: 30px 8px;
+}
+
+.intro-card {
+}
+
+.week-title {
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.big-bg {
+	// background-image: url('../img/tile.png');
 }
 
 .mdl-card__media {
@@ -43,6 +58,7 @@ body {
 }
 
 .mdl-card {
+	border-radius: 3px;
 	min-height: 330px;
 }
 
@@ -87,3 +103,19 @@ body {
 		}
 	}
 }
+
+.post {
+	section {
+		max-width: 520px;
+		margin: 0 auto;
+		padding: 16px 0 0 0;
+		box-sizing: border-box;
+		p {
+			font-size: 15px;
+		}		
+	}
+	.product-image a {
+		height: 300px;
+	}
+}
+
