@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-var defaults      = {
+// for article
+
+var article      = {
   selector:             '.backdrop',
   parent:               '.big-bg',
   exclude:              [ 'rgb(0,0,0)', 'rgba(255,255,255)' ],
@@ -14,6 +16,9 @@ var defaults      = {
     dark:       "ab-dark"
   }
 };
-$.adaptiveBackground.run(defaults);
+$.adaptiveBackground.run(article);
+
+$.adaptiveBackground.run();
+
 
 });

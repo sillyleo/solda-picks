@@ -31,26 +31,16 @@ body {
 
 // 導覽列
 
-// 內容
+// 內容與卡片基本設定
 
 a.logo {
 	img {
 		width: 200px;
 		height: 200px;
 	}
-	display: inline-block;
-	margin: 30px 8px;
-}
-
-.intro-card {
-}
-
-.week-title {
-	border-top: 1px solid rgba(0,0,0,0.1);
-}
-
-.big-bg {
-	// background-image: url('../img/tile.png');
+	width: 200px;
+	display: block;
+	margin: 30px auto;
 }
 
 .mdl-card__media {
@@ -58,26 +48,12 @@ a.logo {
 }
 
 .mdl-card {
-	border-radius: 3px;
 	min-height: 330px;
 }
 
 .main-content {
 	max-width: 900px;
 	margin: 0 auto;
-}
-
-.product-image {
-	@extend .labs-outter;
-	a {
-		@extend .labs-outter;
-		text-decoration: none;
-		box-sizing: border-box;
-		flex-grow: 1;
-		background: green;
-		color: black;
-		vertical-align: bottom;
-	}
 }
 
 .avatar {
@@ -104,6 +80,60 @@ a.logo {
 	}
 }
 
+.product-image {
+	background: transparent;
+	@extend .labs-outter;
+	a {
+		@extend .labs-outter;
+		text-decoration: none;
+		box-sizing: border-box;
+		flex-grow: 1;
+		background: transparent;
+		vertical-align: bottom;
+	}
+}
+
+// 介紹卡
+
+.mdl-card.intro-card {
+	background: lighten(#ff5e6f,10%);
+	.mdl-card__media {
+		background: #ff5e6f;
+	}
+	.mdl-card__supporting-text {
+		color: white;
+	}
+
+}
+
+
+// 每週標題
+
+.week-title {
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+
+// 產品卡（滿版）
+
+.product.full-card > .mdl-card__supporting-text {
+	background: rgba(0,0,0,0.3);
+	span {
+		color: rgba(255,255,255,0.6);
+	}
+	strong {
+		color: white
+	}
+}
+
+// 產品卡（白底）
+.product > .mdl-card__supporting-text {
+	background: white;
+	padding-right: 10%;
+}
+
+// 文章卡
+
 .post {
 	section {
 		max-width: 520px;
@@ -119,3 +149,26 @@ a.logo {
 	}
 }
 
+// 商家卡
+
+.mdl-card.people {
+	.product-image {
+		background: white;
+	}
+	strong {
+		color: rgba(0,0,0,0.87);
+		margin-right: 0.5em;
+	}
+	.meta {
+		margin-bottom: 1em;
+	}
+}
+
+// footer
+
+.footer-wrapper {
+	padding-left: 16px;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 45px;
+}
