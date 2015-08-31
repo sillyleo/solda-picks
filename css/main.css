@@ -102,62 +102,76 @@ a.logo img {
 .mdl-card.intro-card .mdl-card__supporting-text {
   color: white;
 }
-
-/* line 112, ../scss/main.scss */
-.week-title {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+/* line 107, ../scss/main.scss */
+.mdl-card.intro-card .issue-number {
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: 100;
+  padding: 32px;
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+}
+/* line 111, ../scss/main.scss */
+.mdl-card.intro-card .issue-number span {
+  opacity: 0.54;
 }
 
-/* line 119, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 .product.full-card > .mdl-card__supporting-text {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 121, ../scss/main.scss */
+/* line 130, ../scss/main.scss */
 .product.full-card > .mdl-card__supporting-text span {
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 124, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 .product.full-card > .mdl-card__supporting-text strong {
   color: white;
 }
 
-/* line 130, ../scss/main.scss */
+/* line 139, ../scss/main.scss */
 .product > .mdl-card__supporting-text {
   background: white;
   padding-right: 10%;
 }
 
-/* line 138, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .post section {
   max-width: 520px;
   margin: 0 auto;
   padding: 16px 0 0 0;
   box-sizing: border-box;
 }
-/* line 143, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 .post section p {
   font-size: 15px;
 }
-/* line 147, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .post .product-image a {
   height: 300px;
 }
 
-/* line 155, ../scss/main.scss */
+/* line 164, ../scss/main.scss */
 .mdl-card.people .product-image {
   background: white;
 }
-/* line 158, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .mdl-card.people strong {
   color: rgba(0, 0, 0, 0.87);
   margin-right: 0.5em;
 }
-/* line 162, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .mdl-card.people .meta {
   margin-bottom: 1em;
 }
 
-/* line 169, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
+footer {
+  margin-top: 80px;
+}
+
+/* line 182, ../scss/main.scss */
 .footer-wrapper {
   padding-left: 16px;
   max-width: 900px;

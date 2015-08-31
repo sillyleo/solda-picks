@@ -104,14 +104,23 @@ a.logo {
 		color: white;
 	}
 
+	.issue-number {
+			align-self: center;
+			font-family: 'Roboto', sans-serif;
+			font-style: 100;
+			span {
+				opacity: 0.54;			
+			}
+			padding: 32px;
+			// text-align: center;
+			color: white;
+			font-size: 30px;
+			line-height: 40px;
+	}
 }
 
 
 // 每週標題
-
-.week-title {
-	border-top: 1px solid rgba(0,0,0,0.1);
-}
 
 
 // 產品卡（滿版）
@@ -165,6 +174,10 @@ a.logo {
 }
 
 // footer
+
+footer {
+	margin-top: 80px;
+}
 
 .footer-wrapper {
 	padding-left: 16px;
