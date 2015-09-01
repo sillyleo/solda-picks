@@ -33,6 +33,12 @@ body {
 
 // 內容與卡片基本設定
 
+// 隱藏標題
+
+h1.mdl-card__title-text {
+	display: none;
+}
+
 a.logo {
 	img {
 		width: 200px;
@@ -48,7 +54,7 @@ a.logo {
 }
 
 .mdl-card {
-	min-height: 360px;
+	min-height: 400px;
 }
 
 .main-content {
@@ -96,7 +102,7 @@ a.logo {
 // 介紹卡
 
 .mdl-card.intro-card {
-	background: lighten(#ff5e6f,10%);
+	background: lighten(#ff5e6f,7%);
 	.mdl-card__media {
 		background: #ff5e6f;
 	}
@@ -105,11 +111,11 @@ a.logo {
 	}
 
 	.issue-number {
-			align-self: center;
 			font-family: 'Roboto', sans-serif;
 			font-style: 100;
 			span {
-				opacity: 0.54;			
+				opacity: 0.54;
+				font-size: 24px;			
 			}
 			padding: 32px;
 			// text-align: center;
