@@ -11,11 +11,19 @@ body {
 // - 在裡面其中一個加上伸縮的 .labs-grow，如果沒有加，那麼全部 div 只會置底而已
 
 .labs-outter {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   & > div.labs-grow {
-		flex-grow: 1;
+		-webkit-flex-grow: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
   }
 }
 
@@ -25,7 +33,9 @@ body {
 }
 
 .mdl-card__media {
-	flex-grow: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	// media 區塊自動會伸縮
 }
 
@@ -63,8 +73,12 @@ a.logo {
 }
 
 .avatar {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-decoration: none;
 	img {
 		width: 42px;
@@ -93,7 +107,9 @@ a.logo {
 		@extend .labs-outter;
 		text-decoration: none;
 		box-sizing: border-box;
-		flex-grow: 1;
+		-webkit-flex-grow: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
 		background: transparent;
 		vertical-align: bottom;
 	}
