@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title></title>
+<title>手打好物，每週精選 — SOLDA / 手機三十秒開賣，通販不求人。 </title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,6 +28,10 @@
 
 <!-- Android Binding -->
 <script type="text/javascript">
+	var loc = window.location.href+'';
+	if (loc.indexOf('http://solda')==0){
+	    window.location.href = loc.replace('http://','https://');
+	}
    function showAndroidToast(toast) {
        Android.showToast(toast);
    }

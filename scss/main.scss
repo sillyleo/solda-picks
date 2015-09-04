@@ -45,9 +45,7 @@ body {
 
 // 隱藏標題
 
-h1.mdl-card__title-text {
-	display: none;
-}
+
 
 a.logo {
 	img {
@@ -65,6 +63,9 @@ a.logo {
 
 .mdl-card {
 	min-height: 350px;
+	&.banner {
+		min-height: 180px;
+	}
 }
 
 .main-content {
@@ -199,11 +200,4 @@ a.logo {
 
 footer {
 	margin-top: 80px;
-}
-
-.footer-wrapper {
-	padding-left: 16px;
-	max-width: 900px;
-	margin: 0 auto;
-	margin-top: 45px;
 }
