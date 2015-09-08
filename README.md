@@ -8,3 +8,4 @@
 
 - index : `_layout.html.erb` with `body.web`
 - android and iphone : `_mobile_layout.html.erb` with `body.modile`
+- ad: `_ad_layout.html.erb` with `body.ad`
