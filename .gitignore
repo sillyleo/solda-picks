@@ -3,3 +3,4 @@ config.codekit
 
 *.scssc
 build_20*
+*.scssc
