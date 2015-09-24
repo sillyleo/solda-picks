@@ -6,3 +6,5 @@ build_20*
 *.scssc
 
 fire_app_log.txt
+
+*.scssc

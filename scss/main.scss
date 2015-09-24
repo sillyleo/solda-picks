@@ -41,10 +41,11 @@ body {
 
 // 導覽列
 
+
+
 // 內容與卡片基本設定
 
 // 隱藏標題
-
 
 
 a.logo {
@@ -62,6 +63,7 @@ a.logo {
 }
 
 .mdl-card {
+
 	min-height: 350px;
 	&.banner {
 		min-height: 180px;
@@ -128,17 +130,17 @@ a.logo {
 	}
 
 	.issue-number {
-			font-family: 'Roboto', sans-serif;
-			font-style: 100;
-			span {
-				opacity: 0.54;
-				font-size: 24px;			
-			}
-			padding: 32px;
-			// text-align: center;
-			color: white;
-			font-size: 30px;
-			line-height: 40px;
+		font-family: 'Roboto', sans-serif;
+		font-style: 100;
+		span {
+			opacity: 0.54;
+			font-size: 24px;			
+		}
+		padding: 32px;
+		// text-align: center;
+		color: white;
+		font-size: 30px;
+		line-height: 40px;
 	}
 }
 
@@ -213,3 +215,38 @@ footer {
 .mdl-mini-footer__link-list li {
 
 }
+
+// Mobile 版
+
+@media screen and (max-width: 640px) {
+
+
+.issue-number {
+	font-size: 24px;
+	line-height: 30px;
+	span {
+		font-size: 20px;
+	}
+}
+
+.mdl-card {
+		min-height: 280px;
+.people {
+		min-height: 300px;
+	}
+}
+
+	.mdl-typography--display-1, .mdl-typography--display-1-color-contrast {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	a.logo {
+		margin: 10px auto;
+		text-align: center;
+		img {
+			width: 130px;
+			height: 130px;
+		}
+	}
+}
+
