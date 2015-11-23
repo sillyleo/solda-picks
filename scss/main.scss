@@ -164,7 +164,14 @@ a.logo {
 // 產品卡（滿版）
 
 .product.full-card > .mdl-card__supporting-text {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px 12px;
+	font-size: 12px;
 	background: rgba(0,0,0,0.3);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 	span {
 		color: rgba(255,255,255,0.6);
 	}
@@ -243,7 +250,7 @@ footer {
 }
 
 .mdl-card {
-		min-height: 200px;
+		min-height: 170px;
 .people {
 		min-height: 300px;
 	}
