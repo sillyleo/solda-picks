@@ -1,3 +1,9 @@
+// mdl layout scroll jank fix
+.mdl-layout__content {
+will-change:transform;
+}
+
+
 // 打折
 
 span.red	{
